@@ -1,28 +1,48 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import icon1 from './images/icon1.png'
 
-class App extends Component {
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <section className="main__section">
+          <nav className="navbar">
+            <span>LOGO</span>
+            <span>Menu</span>
+          </nav>
+          <article className="article__texts">
+            <h1>Say Hello to ReactJS</h1>
+            <p>You will learn a Frontend framework from scratch, to become a Developer.</p>
+            <button>Awesome!</button>
+          </article>
+        </section>
+        <section className="cards__section">
+          <div>
+            <img src={icon1} />
+            <h3>Declarative</h3>
+            <p>  React makes it painless to create  interactive UI's </p>
+          </div>
+          <div>
+            <img src={icon1} />
+            <h3>Declarative</h3>
+            <p>  React makes it painless to create  interactive UI's </p>
+          </div>
+          <div>
+            <img src={icon1} />
+            <h3>Declarative</h3>
+            <p>  React makes it painless to create  interactive UI's </p>
+          </div>
+          <div>
+            <img src={icon1} />
+            <h3>Declarative</h3>
+            <p>  React makes it painless to create  interactive UI's </p>
+          </div>
+        </section>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+
+export default App
